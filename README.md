@@ -2,8 +2,11 @@
 An easy crawler to crawl all the static urls in the website.
 ### How to use
 First clone the repo.
+
 `$ git clone https://github.com/jakop311/baby-crawler.git`
+
 Install the requirements.
+
 `$ python -m pip install -r requirements.txt`
 
 #### Running the baby-crawler
