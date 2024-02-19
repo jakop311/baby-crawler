@@ -73,7 +73,7 @@ def main():
     parser.add_argument("-f", "--fuzzable", help="Show fuzzable urls inside the website", dest="fuzzable", action="store_true")
     parser.add_argument("-d", "--depth", help="Set the crawl depth (** Max is 2)", type=int, choices=range(0,3), dest="depth")
     parser.add_argument("-s", "--sleep", help="Set time to sleep", dest="sleep", type=int, default=1)
-    parser.add_argument("-p", "--proxy", help="Set up HTTP Proxy in the format http proxy1(http://host:port/) https proxy2", dest="proxy", nargs="*") 
+    parser.add_argument("-p", "--proxy", help="Set up HTTP Proxy in the format: http proxy1(http://host:port/) https proxy2(https://host:port)", dest="proxy", nargs="*") 
     args = parser.parse_args()
     
     if "http" not in args.url and "https" not in args.url:
